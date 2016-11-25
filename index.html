@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myapp">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
 	<title>Title</title>
 </head>
 <body>
-<h1>hello world!</h1>
-<p> visit me on  my github pages "https://udr013.github.io/gitpage/</p>
-
+<div ng-controller="mycontroller">
+	<h1>{{setMessage()}}</h1>
+	<p> visit me on my github pages "https://udr013.github.io/gitpage/</p>
+	<div>
+		<label>your name to char value total</label>
+		<input type="text" ng-model="name" ng-keyup="calculateValue();"/>
+		<div>This is the numeric value of your name: {{totalValue}}</div>
+	</div>
+</div>
 </body>
 </html>
