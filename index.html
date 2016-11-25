@@ -4,16 +4,16 @@
 	<meta charset="UTF-8"/>
 	<script src="angular.min.js"></script>
 	<script src="app.js"></script>
-	<title>Title</title>
+	<title>udr013 GitHub</title>
 </head>
 <body>
 <div ng-controller="mycontroller">
 	<h1>{{setMessage()}}</h1>
-	<p> visit me on my github pages "https://udr013.github.io/gitpage/</p>
+	<!--<p> visit me on my github pages "https://udr013.github.io/gitpage/</p>-->
 	<div>
-		<label>your name to char value total</label>
+		<label>Calculate char value of:</label>
 		<input type="text" ng-model="name" ng-keyup="calculateValue();"/>
-		<div>This is the numeric value of your name: {{totalValue}}</div>
+		<div>The numeric char value of <strong>{{name}}</strong> is : {{totalValue}}</div>
 	</div>
 </div>
 </body>
